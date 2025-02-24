@@ -2,6 +2,8 @@
 
 Este é um aplicativo simples de Diário de Tarefas, desenvolvido com o **Rust** e o **Rocket framework**. O objetivo do projeto é permitir aos usuários adicionar, editar, visualizar e excluir tarefas de forma fácil e intuitiva. O banco de dados utilizado é o **MySQL**, e a interface do usuário foi construída utilizando **HTML** e **CSS**. O projeto é ideal para aprender sobre desenvolvimento web com Rust e integração com banco de dados.
 
+**OBS**: Lembre-se de criar um diretório com o nome `template/` para colocar o arquivo `index.html.hbs` e garantir que o código HTML funcione perfeitamente.
+
 ## Tecnologias Utilizadas
 
 - **Frontend**: HTML, CSS
