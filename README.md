@@ -3,7 +3,7 @@
 Este é um aplicativo simples de Diário de Tarefas, desenvolvido com o **Rust** e o **Rocket framework**. O objetivo do projeto é permitir aos usuários adicionar, editar, visualizar e excluir tarefas de forma fácil e intuitiva. O banco de dados utilizado é o **MySQL**, e a interface do usuário foi construída utilizando **HTML** e **CSS**. O projeto é ideal para aprender sobre desenvolvimento web com Rust e integração com banco de dados.
 
 ## Tecnologias Utilizadas
-
+- **Frontend**: HTML, CSS, OBS: Crie um repositório com  o nome tamplete/ Para por o arquivo index.html.hbs
 - **Frontend**: HTML, CSS
 - **Backend**: Rust, Rocket
 - **Banco de Dados**: MySQL
@@ -21,11 +21,11 @@ Aqui estão duas capturas da interface do aplicativo:
 
 ### 1. Tela Inicial
 
-![Tela Inicial do Diário de Tarefas](assets/interface1.png)
+![Tela Inicial do Diário de Tarefas](img01.png)
 
 ### 2. Tela de Tarefas Cadastradas
 
-![Tela de Tarefas Cadastradas](assets/interface2.png)
+![Tela de Tarefas Cadastradas](img02.png)
 
 ## Como Rodar
 
