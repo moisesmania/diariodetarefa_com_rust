@@ -27,7 +27,7 @@ Aqui estão duas capturas da interface do aplicativo:
 
 ### 2. Tela de Tarefas Cadastradas
 
-![Tela de Tarefas Cadastradas](assets/interface2.png)
+![Tela de Tarefas Cadastradas](img02.png)
 
 ## Como Rodar
 
