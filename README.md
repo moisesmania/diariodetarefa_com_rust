@@ -21,11 +21,11 @@ Aqui estão duas capturas da interface do aplicativo:
 
 ### 1. Tela Inicial
 
-![Tela Inicial do Diário de Tarefas](img01.png)
+![Tela Inicial do Diário de Tarefas](img/img01.png)
 
 ### 2. Tela de Tarefas Cadastradas
 
-![Tela de Tarefas Cadastradas](img02.png)
+![Tela de Tarefas Cadastradas](img/img02.png)
 
 ## Como Rodar
 
