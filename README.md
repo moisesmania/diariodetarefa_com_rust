@@ -23,7 +23,7 @@ Aqui estão duas capturas da interface do aplicativo:
 
 ### 1. Tela Inicial
 
-![Tela Inicial do Diário de Tarefas](assets/interface1.png)
+![Tela Inicial do Diário de Tarefas](img01.png)
 
 ### 2. Tela de Tarefas Cadastradas
 
