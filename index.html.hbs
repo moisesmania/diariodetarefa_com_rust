@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diário de Tarefas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #1b1f2a;
+            color: white;
+            text-align: center;
+        }
+        h1, h2 {
+            color: #4A90E2;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        li {
+            background: #2b2f3a;
+            margin: 10px auto;
+            padding: 10px;
+            border-radius: 5px;
+            width: 50%;
+        }
+        button, input[type="text"] {
+            margin: 5px;
+            padding: 8px;
+            border-radius: 5px;
+            border: none;
+        }
+        button {
+            cursor: pointer;
+            background: #4A90E2;
+            color: white;
+        }
+        button.excluir {
+            background: #E94E77;
+        }
+        .pagina {
+            display: none;
+        }
+        .pagina.ativa {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <h1>Diário de Tarefas</h1>
+
+    <!-- Navegação entre as páginas -->
+    <div>
+        <button onclick="mostrarPagina('adicionar')">Adicionar Tarefa</button>
+        <button onclick="mostrarPagina('tarefas')">Ver / Editar / Excluir Tarefas</button>
+    </div>
+
+    <!-- Página de Tarefas -->
+    <div class="pagina tarefas">
+        <h2>Tarefas Cadastradas</h2>
+
+        {{#each tarefas}}
+            <ul>
+                <li>
+                    <strong>{{titulo}}</strong>: {{descricao}} 
+                    <form method="post" action="/editar/{{id}}" style="display:inline;">
+                        <input type="text" name="titulo" placeholder="Novo título" required>
+                        <input type="text" name="descricao" placeholder="Nova descrição" required>
+                        <button type="submit">Editar</button>
+                    </form>
+                    <form method="post" action="/excluir/{{id}}" style="display:inline;">
+                        <button type="submit" class="excluir">Excluir</button>
+                    </form>
+                </li>
+            </ul>
+        {{/each}}
+    </div>
+
+    <!-- Página de Adicionar Tarefa -->
+    <div class="pagina adicionar">
+        <h2>Adicionar Nova Tarefa</h2>
+        <form method="post" action="/adicionar">
+            <input type="text" name="titulo" placeholder="Título" required>
+            <input type="text" name="descricao" placeholder="Descrição" required>
+            <button type="submit">Adicionar</button>
+        </form>
+    </div>
+
+    <script>
+        // Função para alternar entre as páginas
+        function mostrarPagina(pagina) {
+            // Esconde todas as páginas
+            document.querySelectorAll('.pagina').forEach(function(p) {
+                p.classList.remove('ativa');
+            });
+
+            // Mostra a página selecionada
+            document.querySelector('.pagina.' + pagina).classList.add('ativa');
+        }
+
+        // Inicializa com a página de tarefas
+        mostrarPagina('tarefas');
+    </script>
+</body>
+</html>
